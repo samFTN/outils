@@ -489,6 +489,53 @@
           </a>
         </article>
 
+        <!-- ACCORDEUR -->
+        <article class="site-card">
+          <a href="https://tuner.guitarisation.fr" target="_blank" rel="noopener" class="card-link-wrap">
+            <div class="card-illus illus-tuner">
+              <svg viewBox="0 0 320 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <filter id="f-tuner" x="-30%" y="-30%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="rgba(0,0,0,0.09)"/>
+                  </filter>
+                  <linearGradient id="bar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"   stop-color="#ef4444"/>
+                    <stop offset="30%"  stop-color="#facc15"/>
+                    <stop offset="46%"  stop-color="#22c55e"/>
+                    <stop offset="54%"  stop-color="#22c55e"/>
+                    <stop offset="70%"  stop-color="#facc15"/>
+                    <stop offset="100%" stop-color="#ef4444"/>
+                  </linearGradient>
+                </defs>
+                <!-- Card -->
+                <rect x="60" y="10" width="200" height="152" rx="18" fill="white" filter="url(#f-tuner)"/>
+                <!-- Note name -->
+                <text x="160" y="88" font-family="Inter,system-ui,sans-serif" font-size="64" font-weight="900"
+                      fill="#111111" text-anchor="middle" letter-spacing="-4">E</text>
+                <!-- Octave -->
+                <text x="196" y="72" font-family="Inter,system-ui,sans-serif" font-size="22" font-weight="700"
+                      fill="#6b7280" text-anchor="middle">4</text>
+                <!-- Tuning bar -->
+                <rect x="84" y="114" width="152" height="8" rx="4" fill="url(#bar-grad)"/>
+                <!-- Center tick -->
+                <line x1="160" y1="109" x2="160" y2="126" stroke="#111111" stroke-width="1.5" stroke-linecap="round" opacity="0.2"/>
+                <!-- Needle (centered = in tune) -->
+                <rect x="158.5" y="107" width="3" height="20" rx="1.5" fill="#22c55e"/>
+                <circle cx="160" cy="128" r="5" fill="#22c55e"/>
+                <!-- ACCORDÉ label -->
+                <text x="160" y="148" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="700"
+                      fill="#16a34a" text-anchor="middle" letter-spacing="1.5">ACCORDÉ ✓</text>
+              </svg>
+            </div>
+            <div class="card-body">
+              <span class="card-tag">Accordage</span>
+              <h2 class="card-title">Accordeur</h2>
+              <p class="card-desc">Accordez votre guitare en temps réel grâce au microphone. Gestion du capodastre et références sonores intégrées.</p>
+              <span class="card-cta">Visiter <span class="arrow">→</span></span>
+            </div>
+          </a>
+        </article>
+
       </div>
     </main>
 
