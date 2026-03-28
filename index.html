@@ -237,9 +237,6 @@
     .illus-metronome { background: linear-gradient(150deg, #fefce8 0%, #fef3c7 100%); }
     .illus-loop      { background: linear-gradient(150deg, #101010 0%, #1c1c1c 100%); }
     .illus-fretboard { background: linear-gradient(150deg, #f5efe4 0%, #ede5d8 100%); }
-    .illus-jeux      { background: linear-gradient(150deg, #eef2ff 0%, #e0e8ff 100%); }
-    .illus-sticker   { background: linear-gradient(150deg, #fefce8 0%, #fef0b0 100%); }
-    .illus-tabs      { background: linear-gradient(150deg, #f0fdf4 0%, #dcfce7 100%); }
 
     .card-body {
       padding: 18px 20px 22px;
@@ -284,17 +281,6 @@
     }
     .site-card:hover .card-cta .arrow { transform: translateX(3px); }
 
-    .badge-local {
-      font-size: 9px; font-weight: 700; letter-spacing: 1px;
-      text-transform: uppercase;
-      color: var(--muted2);
-      background: var(--border2);
-      border: 1px solid var(--border);
-      border-radius: 5px;
-      padding: 2px 7px;
-      vertical-align: middle;
-    }
-
     /* ─── FOOTER ─────────────────────────────────────────── */
     footer {
       width: 100%;
@@ -307,8 +293,8 @@
     }
 
     /* ─── RESPONSIVE ─────────────────────────────────────── */
-    @media (max-width: 880px) {
-      .sites-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 760px) {
+      .sites-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
     }
 
     @media (max-width: 640px) {
@@ -498,155 +484,6 @@
               <h2 class="card-title">Fretboard</h2>
               <p class="card-desc">Visualisez notes, gammes et accords sur un manche de guitare interactif.</p>
               <span class="card-cta">Visiter <span class="arrow">→</span></span>
-            </div>
-          </a>
-        </article>
-
-        <!-- JEUX -->
-        <article class="site-card">
-          <a href="https://jeux.guitarisation.fr" target="_blank" rel="noopener" class="card-link-wrap">
-            <div class="card-illus illus-jeux">
-              <svg viewBox="0 0 320 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <filter id="f-jeux" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="rgba(80,100,200,0.10)"/>
-                  </filter>
-                </defs>
-                <!-- Card -->
-                <rect x="45" y="12" width="230" height="110" rx="16" fill="white" filter="url(#f-jeux)"/>
-                <!-- Question label pill -->
-                <rect x="62" y="26" width="76" height="17" rx="6" fill="#e0e8ff"/>
-                <text x="100" y="38.5" font-family="Inter,system-ui,sans-serif" font-size="9" font-weight="700"
-                      fill="#5070cc" text-anchor="middle" letter-spacing="0.5">QUESTION</text>
-                <!-- Musical note -->
-                <text x="215" y="42" font-family="Inter,system-ui,sans-serif" font-size="20" fill="#d4a017">♩</text>
-                <!-- Question text -->
-                <text x="160" y="66" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700"
-                      fill="#111" text-anchor="middle">Quelle est cette note ?</text>
-                <!-- Answer A (correct) -->
-                <rect x="62" y="76" width="90" height="29" rx="8" fill="#d4a017"/>
-                <text x="107" y="95" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="700"
-                      fill="white" text-anchor="middle">Sol  ✓</text>
-                <!-- Answer B -->
-                <rect x="162" y="76" width="90" height="29" rx="8" fill="#eef0f4"/>
-                <text x="207" y="95" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600"
-                      fill="#6b7280" text-anchor="middle">Fa</text>
-                <!-- Stars -->
-                <text x="118" y="143" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#e8c23a">★</text>
-                <text x="148" y="143" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#e8c23a">★</text>
-                <text x="178" y="143" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#dde0e8">★</text>
-                <text x="205" y="136" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="500"
-                      fill="#9ca3af">2 / 3</text>
-              </svg>
-            </div>
-            <div class="card-body">
-              <span class="card-tag">Apprentissage</span>
-              <h2 class="card-title">Jeux</h2>
-              <p class="card-desc">Apprenez la guitare de façon ludique grâce à des quiz et exercices musicaux interactifs.</p>
-              <span class="card-cta">Visiter <span class="arrow">→</span></span>
-            </div>
-          </a>
-        </article>
-
-        <!-- STICKER -->
-        <article class="site-card">
-          <a href="https://sticker.guitarisation.fr" target="_blank" rel="noopener" class="card-link-wrap">
-            <div class="card-illus illus-sticker">
-              <svg viewBox="0 0 320 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <!-- Hexagonal sticker (main) -->
-                <polygon points="160,18 208,45 208,99 160,126 112,99 112,45"
-                         fill="#e8c23a"/>
-                <polygon points="160,26 200,50 200,95 160,118 120,95 120,50"
-                         fill="#d4a017" opacity="0.28"/>
-                <!-- G text -->
-                <text x="157" y="89" font-family="Inter,system-ui,sans-serif" font-size="44" font-weight="900"
-                      fill="white" text-anchor="middle" dy="0">G</text>
-                <!-- TM -->
-                <text x="184" y="52" font-family="Inter,system-ui,sans-serif" font-size="13" font-weight="700"
-                      fill="white">™</text>
-                <!-- Shine lines -->
-                <line x1="143" y1="32" x2="136" y2="42" stroke="rgba(255,255,255,0.55)" stroke-width="2.5" stroke-linecap="round"/>
-                <line x1="150" y1="25" x2="145" y2="32" stroke="rgba(255,255,255,0.35)" stroke-width="1.5" stroke-linecap="round"/>
-
-                <!-- Left sticker - rounded badge -->
-                <rect x="18" y="63" width="76" height="28" rx="14" fill="#111111" opacity="0.82"
-                      transform="rotate(-14,56,77)"/>
-                <text x="56" y="80" font-family="Inter,system-ui,sans-serif" font-size="10" font-weight="700"
-                      fill="white" text-anchor="middle" transform="rotate(-14,56,80)">GUITARE</text>
-
-                <!-- Right sticker - circle badge -->
-                <circle cx="256" cy="76" r="32" fill="#d4a017" opacity="0.88"/>
-                <text x="256" y="70" font-family="Inter,system-ui,sans-serif" font-size="9.5" font-weight="700"
-                      fill="white" text-anchor="middle">L'ÉCOLE</text>
-                <text x="256" y="82" font-family="Inter,system-ui,sans-serif" font-size="9.5" font-weight="700"
-                      fill="white" text-anchor="middle">GUITARE 2.0</text>
-
-                <!-- Label -->
-                <text x="160" y="156" font-family="Inter,system-ui,sans-serif" font-size="9.5" font-weight="700"
-                      fill="#b09030" text-anchor="middle" letter-spacing="1.2">GÉNÉRATEUR DE STICKERS</text>
-              </svg>
-            </div>
-            <div class="card-body">
-              <span class="card-tag">Créatif</span>
-              <h2 class="card-title">Sticker</h2>
-              <p class="card-desc">Créez et exportez des stickers et visuels aux couleurs de Guitarisation™.</p>
-              <span class="card-cta">Visiter <span class="arrow">→</span></span>
-            </div>
-          </a>
-        </article>
-
-        <!-- TABS (local IA) -->
-        <article class="site-card" style="opacity:0.82;">
-          <a href="http://localhost:3000" target="_blank" rel="noopener" class="card-link-wrap">
-            <div class="card-illus illus-tabs">
-              <svg viewBox="0 0 320 172" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <filter id="f-tabs" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="0" dy="5" stdDeviation="10" flood-color="rgba(0,0,0,0.07)"/>
-                  </filter>
-                </defs>
-                <!-- Tab paper card -->
-                <rect x="42" y="10" width="196" height="140" rx="14" fill="white" filter="url(#f-tabs)"/>
-                <!-- TAB heading -->
-                <text x="62" y="40" font-family="Inter,system-ui,sans-serif" font-size="17" font-weight="900"
-                      fill="#111" letter-spacing="2">TAB</text>
-                <!-- IA badge -->
-                <rect x="104" y="26" width="36" height="18" rx="5.5" fill="#d4a017"/>
-                <text x="122" y="38.5" font-family="Inter,system-ui,sans-serif" font-size="9.5" font-weight="700"
-                      fill="white" text-anchor="middle">IA ✦</text>
-                <!-- 6 staff lines -->
-                <line x1="58" y1="58"  x2="222" y2="58"  stroke="#dde0d8" stroke-width="1"/>
-                <line x1="58" y1="72"  x2="222" y2="72"  stroke="#dde0d8" stroke-width="1"/>
-                <line x1="58" y1="86"  x2="222" y2="86"  stroke="#dde0d8" stroke-width="1"/>
-                <line x1="58" y1="100" x2="222" y2="100" stroke="#dde0d8" stroke-width="1"/>
-                <line x1="58" y1="114" x2="222" y2="114" stroke="#dde0d8" stroke-width="1"/>
-                <line x1="58" y1="128" x2="222" y2="128" stroke="#dde0d8" stroke-width="1"/>
-                <!-- Tab numbers -->
-                <text x="73"  y="62"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">0</text>
-                <text x="73"  y="90"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">2</text>
-                <text x="73"  y="132" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">0</text>
-                <text x="103" y="76"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#d4a017">3</text>
-                <text x="103" y="104" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#d4a017">2</text>
-                <text x="133" y="62"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">2</text>
-                <text x="133" y="76"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">0</text>
-                <text x="133" y="118" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">0</text>
-                <text x="163" y="90"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#d4a017">5</text>
-                <text x="163" y="132" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">3</text>
-                <text x="193" y="76"  font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#111">0</text>
-                <text x="193" y="104" font-family="Inter,system-ui,sans-serif" font-size="11" font-weight="700" fill="#d4a017">4</text>
-                <!-- Sparkles IA -->
-                <text x="255" y="56"  font-family="Inter,system-ui,sans-serif" font-size="30" fill="#d4a017" opacity="0.75">✦</text>
-                <text x="266" y="90"  font-family="Inter,system-ui,sans-serif" font-size="18" fill="#d4a017" opacity="0.45">✦</text>
-                <text x="247" y="112" font-family="Inter,system-ui,sans-serif" font-size="12" fill="#d4a017" opacity="0.35">✦</text>
-              </svg>
-            </div>
-            <div class="card-body">
-              <span class="card-tag">IA · Local</span>
-              <h2 class="card-title">Tabs <span class="badge-local">Local</span></h2>
-              <p class="card-desc">Générez des tablatures de guitare par IA à partir d'une description vocale ou textuelle.</p>
-              <span class="card-cta" style="color:var(--muted2);">
-                Lancer en local <span class="arrow" style="color:var(--muted)">→</span>
-              </span>
             </div>
           </a>
         </article>
